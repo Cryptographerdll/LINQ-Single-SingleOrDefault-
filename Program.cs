@@ -10,15 +10,18 @@ namespace LINQ_Single___SingleOrDefault
         static void Main(string[] args)
         {
             string[] Names = { "IronMan" };
+            // string[] Names = { };
+            // In case we Give unexistant word or We declar an empty string, Programm will Give Error console soo we must use the SingleOrDefault(); Method to avoide the exception
 
             var FirstItem = Names.Single(); // IronMan
 
             #region comment 
             // In Single(); method we get the item exist in string list but the list must contain one item .
-            // In case we Give unexistant word or We declar an empty string, Programm will Give Error console soo we must use the SingleOrDefault(); Method .
             #endregion
+                
+                Console.Write(FirstItem); 
 
-            Console.Write(FirstItem); // Does not exist soo we ask the programm if not exist == Null return True . 
+            // Console.Write(FirstItem == null); // Does not exist soo we ask the programm if not exist == Null return True . 
         }
     }
 }
